@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>custom-title</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel='stylesheet' id='custom-css' href='./css/style.min.css' type='text/css' media='all'/>
 </head>
 <body>
 
+
+<div class="custom-slider" id="slider">
+    <ul class="custom-slider__list">
+        <li class="custom-slider__slide">
+            <img class="custom-slider__slide_img" src="./img/box.png" alt="коробка">
+            <div class="custom-slider__slide_title">
+                Коробка
+            </div>
+            <div class="custom-slider__slide_desc">
+                В коробке может находиться до 30 ассортиментных позиций.
+            </div>
+        </li>
+        <li class="custom-slider__slide">
+            <img class="custom-slider__slide_img" src="./img/pallet.png" alt="паллета">
+            <div class="custom-slider__slide_title">
+                Паллета
+            </div>
+            <div class="custom-slider__slide_desc">
+                Склад рассчитан на европаллеты, но мы можем адаптировать стеллажи под Ваш формат.
+            </div>
+        </li>
+        <li class="custom-slider__slide">
+            <img class="custom-slider__slide_img" src="./img/rock.png" alt="ячейка">
+            <div class="custom-slider__slide_title">
+                Ячейка
+            </div>
+            <div class="custom-slider__slide_desc">
+                В ячейке стеллажа можно разместить товар размером ХХ.
+            </div>
+        </li>
+        <li class="custom-slider__slide">
+            <img class="custom-slider__slide_img" src="./img/elephant.png" alt="негабаритные">
+            <div class="custom-slider__slide_title">
+                Негабаритные
+            </div>
+            <div class="custom-slider__slide_desc">
+                Наш склад может принимать и хранить негабаритные грузы.
+            </div>
+        </li>
+    </ul>
+    <a href="#" id="custom-slider__next">></a>
+    <a href="#" id="custom-slider__prev"><</a>
+</div>
+
+<script src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+<script type='text/javascript' src='./js/scripts.min.js'></script>
 </body>
 </html>

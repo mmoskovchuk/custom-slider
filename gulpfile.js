@@ -39,14 +39,14 @@ gulp.task('img', function() {
 //TASK: gulp less
 //--------------------------------------------------
 gulp.task('less', function () {
-	gulp.src(['./less/style.less'])
-	.pipe(plumber())
-	.pipe(less())
-	.pipe(cleanCSS())
-	.pipe(rename({extname: ".min.css"}))
-	.pipe(autoprefixer({browsers: ['last 50 versions']}))
-	.pipe(cleanCSS({compatibility: 'ie8', keepSpecialComments: 1}))
-	.pipe(gulp.dest('./css'))
+    gulp.src(['./less/style.less'])
+        .pipe(plumber())
+        .pipe(less())
+        .pipe(cleanCSS())
+        .pipe(rename({extname: ".min.css"}))
+        .pipe(autoprefixer({browsers: ['last 50 versions']}))
+        .pipe(cleanCSS({compatibility: 'ie8', keepSpecialComments: 1}))
+        .pipe(gulp.dest('./css'))
 });
 
 //TASK: gulp js
